@@ -70,6 +70,12 @@ public class LoginAction {
 		return accountInfoService.getActInfo(actNum);
 	}
 
+	@GetMapping("v1/api/hello")
+	public String hello()
+	{
+		return "Hello world";
+	}
+	
 	@GetMapping("v1/api/test")
 	public AccountInfo getAccInfo()
 	{
